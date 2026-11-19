@@ -1,12 +1,4 @@
-"""
-Forex Factory high-impact news -> Telegram heads-up alerts.
 
-Run every ~10 minutes (GitHub Actions does this). Each run:
-  1. Downloads this week's Forex Factory calendar.
-  2. Finds HIGH impact (red folder) events starting within LEAD_MINUTES.
-  3. Sends one Telegram message per release time (skips ones already sent).
-"""
-try:
     import truststore
     truststore.inject_into_ssl()
 except ImportError:
